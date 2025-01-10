@@ -1,0 +1,10 @@
+CREATE FUNCTION Calc (
+    @a DECIMAL(10, 2)
+)
+RETURNS DECIMAL(10, 2)
+AS
+BEGIN
+    RETURN @a * 0.45
+END;
+
+SELECT dbo.Calc(10) AS result;
