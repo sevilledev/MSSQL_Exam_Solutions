@@ -42,7 +42,7 @@ INSERT INTO Subjects VALUES
 SELECT ID, name, Salary
 FROM Subjects
 INNER JOIN Teachers
-ON Subjects.Subject_ID = Teachers.ID
+ON Subjects.Instructor_ID = Teachers.ID
 WHERE Subjects.Title LIKE '%t%';
 
 
